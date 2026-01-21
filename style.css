@@ -1,0 +1,67 @@
+/* العناوين والخطوط العامة */
+body { font-family: 'Cairo', sans-serif; background-color: #fff; color: #1a1a1a; margin: 0; padding: 0; overflow-x: hidden; }
+
+/* Navbar */
+.navbar { background: #fff !important; border-bottom: 1px solid #eee; }
+.btn-nav-phone { background: #1a1a1a; color: #fff; padding: 8px 15px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+
+/* Hero Section */
+.hero-section { padding: 30px 0; background: #fff; }
+.hero-title { font-size: 2.4rem; font-weight: 800; line-height: 1.3; margin-bottom: 15px; }
+.hero-subtitle { font-size: 1.4rem; color: #c5a059; font-weight: 700; margin-bottom: 10px; }
+.price-tag { font-size: 1.2rem; background: #fdf8ef; display: inline-block; padding: 8px 20px; border-radius: 8px; margin-bottom: 25px; border: 1px dashed #c5a059; font-weight: 700; }
+.btn-whatsapp { background-color: #25d366; color: white; padding: 14px 35px; font-size: 1.3rem; font-weight: 700; border-radius: 12px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; width: 100%; max-width: 300px; }
+.swiper-main { height: 380px; border-radius: 15px; }
+.swiper-thumb { height: 80px; margin-top: 10px; border-radius: 10px; }
+.swiper-slide img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+
+/* Why La Vista Section (Pure CSS Grid) */
+.lavista-features-section { padding: 60px 20px; background-color: #fff; direction: rtl; }
+.lavista-container { max-width: 1200px; margin: 0 auto; }
+.lavista-header { text-align: center; margin-bottom: 40px; }
+.lavista-main-title { font-size: 2.2rem; font-weight: 800; }
+.lavista-title-underline { width: 70px; height: 4px; background: #c5a059; margin: 0 auto; }
+.lavista-grid { display: grid; gap: 20px; grid-template-columns: repeat(4, 1fr); text-align: center; }
+.lavista-card { padding: 30px 15px; border: 1px solid #eee; border-radius: 15px; display: flex; flex-direction: column; align-items: center; transition: 0.3s; }
+.lavista-card:hover { border-color: #c5a059; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.lavista-icon { width: 65px; height: 65px; background: #fdf8ef; color: #c5a059; font-size: 25px; display: flex; align-items: center; justify-content: center; border-radius: 50%; margin-bottom: 15px; }
+
+/* Projects Grid */
+.projects-section { padding: 60px 20px; background: #fcfcfc; }
+.projects-grid { display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); }
+.project-card { background: #fff; border-radius: 15px; overflow: hidden; border: 1px solid #eee; height: 100%; display: flex; flex-direction: column; }
+.project-image { height: 180px; position: relative; }
+.project-image img { width: 100%; height: 100%; object-fit: cover; }
+.project-badge { position: absolute; top: 10px; left: 10px; background: #111; color: #fff; padding: 4px 10px; border-radius: 5px; font-size: 0.7rem; }
+.project-content { padding: 20px; flex-grow: 1; text-align: right; }
+.project-title { color: #c5a059; font-weight: 800; font-size: 1.2rem; margin-bottom: 10px; }
+.project-info-list p { font-size: 0.85rem; margin-bottom: 5px; color: #555; }
+.project-price { background: #fdf8ef; padding: 10px; border-radius: 8px; margin: 15px 0; }
+.project-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.btn-call { background: #111; color: #fff; text-decoration: none; text-align: center; padding: 8px; border-radius: 5px; font-size: 0.8rem; }
+.btn-wa { background: #25d366; color: #fff; text-decoration: none; text-align: center; padding: 8px; border-radius: 5px; font-size: 0.8rem; }
+
+/* Contact Form */
+.contact-wrapper { max-width: 800px; margin: 0 auto; background: #fff; padding: 35px; border-radius: 20px; border: 1px solid #f0f0f0; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.form-group { display: flex; flex-direction: column; margin-bottom: 15px; }
+.form-group label { font-weight: 700; font-size: 0.9rem; margin-bottom: 5px; }
+.form-group input, .form-group select { padding: 10px; border: 1px solid #ddd; border-radius: 8px; outline: none; }
+.btn-submit-form { background: #c5a059; color: #fff; border: none; padding: 12px 40px; border-radius: 8px; font-weight: 800; width: 100%; }
+
+/* Footer */
+.main-footer { background: #111; color: #fff; padding: 50px 20px 20px; text-align: center; }
+.footer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 30px; }
+.footer-links { list-style: none; padding: 0; }
+.footer-links a { color: #aaa; text-decoration: none; font-size: 0.8rem; }
+.footer-bottom { border-top: 1px solid #222; padding-top: 20px; font-size: 0.8rem; color: #666; }
+
+/* Responsive */
+@media (max-width: 991px) {
+    .lavista-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+    .lavista-grid, .projects-grid, .form-grid, .footer-grid { grid-template-columns: 1fr; }
+    .hero-title { font-size: 1.8rem; }
+}
