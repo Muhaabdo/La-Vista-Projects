@@ -11,9 +11,16 @@ body { font-family: 'Cairo', sans-serif; background-color: #fff; color: #1a1a1a;
 .hero-subtitle { font-size: 1.4rem; color: #c5a059; font-weight: 700; margin-bottom: 10px; }
 .price-tag { font-size: 1.2rem; background: #fdf8ef; display: inline-block; padding: 8px 20px; border-radius: 8px; margin-bottom: 25px; border: 1px dashed #c5a059; font-weight: 700; }
 .btn-whatsapp { background-color: #25d366; color: white; padding: 14px 35px; font-size: 1.3rem; font-weight: 700; border-radius: 12px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; width: 100%; max-width: 300px; }
+
+/* Swiper */
 .swiper-main { height: 380px; border-radius: 15px; }
 .swiper-thumb { height: 80px; margin-top: 10px; border-radius: 10px; }
 .swiper-slide img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+
+/* تحسين pagination (dots) */
+.mySwiperMain .swiper-pagination { bottom: 10px !important; }
+.mySwiperMain .swiper-pagination-bullet { opacity: 0.5; }
+.mySwiperMain .swiper-pagination-bullet-active { opacity: 1; }
 
 /* Why La Vista Section (Pure CSS Grid) */
 .lavista-features-section { padding: 60px 20px; background-color: #fff; direction: rtl; }
@@ -61,7 +68,14 @@ body { font-family: 'Cairo', sans-serif; background-color: #fff; color: #1a1a1a;
     .lavista-grid, .projects-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-grid { grid-template-columns: 1fr 1fr; }
 }
+
 @media (max-width: 600px) {
     .lavista-grid, .projects-grid, .form-grid, .footer-grid { grid-template-columns: 1fr; }
     .hero-title { font-size: 1.8rem; }
+
+    /* ✅ Gallery Mobile tweaks */
+    .swiper-thumb { display: none !important; }                 /* إلغاء الثمبنيل */
+    .swiper-main { height: 320px; }                             /* ارتفاع أنسب للموبايل */
+    .mySwiperMain .swiper-button-next,
+    .mySwiperMain .swiper-button-prev { display: none !important; } /* إخفاء الأسهم على الموبايل */
 }
